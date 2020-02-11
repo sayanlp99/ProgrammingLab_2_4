@@ -1,37 +1,28 @@
 #include<stdio.h>
- 
-int MatrixChainMultiplication(int p[], int n){
-    int m[n][n];
-    int i, j, k, L, q;
-    for (i=1; i<n; i++){
-        m[i][i] = 0; 
+int main(){
+    int n,m[10][10],p[10],l,j,k,q,i=0;
+    printf("Enter number of matrices: ");
+    scanf("%d",&n);
+    printf("Enter dimensions of the matrices:\n");
+    for(i=0;i<=n;i++){
+        printf("[%d]:",i+1);
+        scanf("%d",&p[i]);
     }
-    for (L=2; L<n; L++){
-        for (i=1; i<n-L+1; i++){
-            j = i+L-1;
-            m[i][j] = 99999;
-            for (k=i; k<=j-1; k++){
-                q = m[i][k] + m[k+1][j] + p[i-1]*p[k]*p[j];
-                if (q < m[i][j]){
-                    m[i][j] = q;
+    for(i=1;i<=n;i++){
+        m[i][i]=0;
+    }
+    for(l=1;l<n;l++){
+        for(i=1;i<n-l;i++){
+            j=i+1;
+            m[i][j]=9999;
+            for(k=i;k<=j-1;k++){
+                q=m[i][k]+m[k+1][j]+(p[i-1]*p[k]*p[j]);
+                if(q<m[i][j]){
+                    m[i][j]=q;
                 }
             }
         }
     }
-    return m[1][n-1];
-}
-int main(){
-    int n,i;
-    printf("Enter number of matrices\n");
-    scanf("%d",&n);
-    n++;
-    int arr[n];
-    printf("Enter dimensions \n");
-    for(i=0;i<n;i++){
-        printf("Enter d%d :: ",i);
-        scanf("%d",&arr[i]);
-    }
-    int size = sizeof(arr)/sizeof(arr[0]);
-    printf("Minimum number of multiplications is %d ", MatrixChainMultiplication(arr, size));
+    printf("The number of steps in the Multiplication: %d", m[1][n]);
     return 0;
 }
