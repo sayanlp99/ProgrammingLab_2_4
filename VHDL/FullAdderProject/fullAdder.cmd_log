@@ -1,0 +1,1 @@
+xst -ise "C:/Xilinx91i/FullAdderProject/FullAdderProject.ise" -intstyle ise -ifn fullAdder.xst -ofn fullAdder.syr
