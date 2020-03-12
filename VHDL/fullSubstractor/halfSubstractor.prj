@@ -1,0 +1,4 @@
+vhdl work "xorGate.vhd"
+vhdl work "notGate.vhd"
+vhdl work "andGate.vhd"
+vhdl work "halfSubstractor.vhd"

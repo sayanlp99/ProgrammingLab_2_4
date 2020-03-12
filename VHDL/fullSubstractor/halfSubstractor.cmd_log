@@ -1,0 +1,5 @@
+xst -ise "C:/Xilinx91i/fullSubstractor/fullSubstractor.ise" -intstyle ise -ifn halfSubstractor.xst -ofn halfSubstractor.syr
+xst -ise "C:/Xilinx91i/fullSubstractor/fullSubstractor.ise" -intstyle ise -ifn halfSubstractor.xst -ofn halfSubstractor.syr
+xst -ise "C:/Xilinx91i/fullSubstractor/fullSubstractor.ise" -intstyle ise -ifn halfSubstractor.xst -ofn halfSubstractor.syr
+xst -ise "C:/Xilinx91i/fullSubstractor/fullSubstractor.ise" -intstyle ise -ifn halfSubstractor.xst -ofn halfSubstractor.syr
+xst -ise "C:/Xilinx91i/fullSubstractor/fullSubstractor.ise" -intstyle ise -ifn halfSubstractor.xst -ofn halfSubstractor.syr
