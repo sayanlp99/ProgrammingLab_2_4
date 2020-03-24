@@ -34,6 +34,7 @@ int main(){
         scanf("%d",&g[u][v]);
     }
     floyd(n);
+    printf("All pair shortest path:\n");
     for(i=1;i<=n;i++){
         for(j=1;j<=n;j++)
             printf("%7d",g[i][j]);
