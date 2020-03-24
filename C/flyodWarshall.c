@@ -5,7 +5,7 @@ void floyd(int n){
     for(k=1;k<=n;k++){
         for(i=1;i<=n;i++){
             for(j=1;j<=n;j++){
-                if((g[i][k]+g[k][j])<(g[i][j]))
+                if((g[i][k]+g[k][j])<g[i][j])
                     g[i][j]=g[i][k]+g[k][j];
             }
         }
@@ -18,9 +18,9 @@ int main(){
     for(i=1;i<=n;i++){
         for(j=1;j<=n;j++){
             if(i==j)
-            g[i][j]=0;
+            	g[i][j]=0;
             else
-            g[i][j]=9999;
+            	g[i][j]=9999;
         }   
     }
     printf("Enter number of edges: ");
@@ -35,10 +35,9 @@ int main(){
     }
     floyd(n);
     for(i=1;i<=n;i++){
-        for(j=1;j<=n;j++){
+        for(j=1;j<=n;j++)
             printf("%7d",g[i][j]);
-        }
-    printf("\n");
+    	printf("\n");
     }
     return 0;
 }
