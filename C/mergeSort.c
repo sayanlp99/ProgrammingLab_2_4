@@ -36,7 +36,7 @@ int main() {
    	scanf("%d",&a[i]);
    }
    mergeSort(0, n-1);
-   printf("List after sorting:");
+   printf("List after sorting:\n");
    for(i = 0; i < n; i++)
       printf("%d ", a[i]);
    printf("\n");
