@@ -7,7 +7,7 @@ use IEEE.STD_LOGIC_UNSIGNED.ALL;
 entity decoder2to4ifelse is
 port(a : in STD_LOGIC_VECTOR(1 downto 0);
 	b : out STD_LOGIC_VECTOR(3 downto 0));
-end decoder2to4;
+end decoder2to4ifelse;
 
 architecture Behavioural of decoder2to4ifelse is
 begin
