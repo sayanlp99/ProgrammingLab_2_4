@@ -3,14 +3,14 @@ use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.STD_LOGIC_ARITH.ALL;
 use IEEE.STD_LOGIC_UNSIGNED.ALL;
 
-entity decider2to4logicgate is
+entity decoder2to4logicgate is
 port(
  a : in STD_LOGIC_VECTOR(1 downto 0);
  b : out STD_LOGIC_VECTOR(3 downto 0)
  );
-end decider2to4logicgate;
+end decoder2to4logicgate;
 
-architecture Behavioral of decider2to4logicgate is
+architecture Behavioral of decoder2to4logicgate is
 
 begin
 
