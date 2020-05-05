@@ -1,2 +1,0 @@
-xst -ise "C:/Xilinx91i/fullAdderStructural/fullAdderStructural.ise" -intstyle ise -ifn fullAdder.xst -ofn fullAdder.syr
-xst -ise "C:/Xilinx91i/fullAdderStructural/fullAdderStructural.ise" -intstyle ise -ifn fullAdder.xst -ofn fullAdder.syr

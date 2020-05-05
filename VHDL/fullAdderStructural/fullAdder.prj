@@ -1,5 +1,0 @@
-vhdl work "xorGate.vhd"
-vhdl work "andGate.vhd"
-vhdl work "orGate.vhd"
-vhdl work "halfAdder.vhd"
-vhdl work "fullAdder.vhd"
