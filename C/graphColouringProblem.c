@@ -11,9 +11,9 @@ void next_color(int k){
 
 int main(){
   int n,e,i,j,k,l;
-  printf("Enter no. of vertices : ");
+  printf("Enter number of vertices: ");
   scanf("%d",&n);
-  printf("Enter no. of edges : ");
+  printf("Enter number of edges: ");
   scanf("%d",&e);
   for(i=0;i<n;i++){
     for(j=0;j<n;j++){
@@ -29,7 +29,7 @@ int main(){
   for(i=0;i<n;i++){
     next_color(i);
   }
-  printf("Colors of vertices -->\n");
+  printf("Colors of vertices:\n");
   for(i=0;i<n;i++){
     printf("Vertex[%d] : %d\n",i+1,x[i]);
   }
