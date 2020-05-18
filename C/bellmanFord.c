@@ -16,12 +16,12 @@ int bellmanFord(int G[][20],int v,int e,int s){
 		}
 	}
 	for(j=1;j<=v;j++){
-			for(k=1;k<=v;k++){
-				if(d[j]+G[j][k]<d[k] && G[j][k]!=INF && G[j][k]!=0){
-					return 0;
-				}
+		for(k=1;k<=v;k++){
+			if(d[j]+G[j][k]<d[k] && G[j][k]!=INF && G[j][k]!=0){
+				return 0;
 			}
 		}
+	}
 	return 1;
 }
 void main(){
