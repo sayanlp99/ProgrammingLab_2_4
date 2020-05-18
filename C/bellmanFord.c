@@ -36,7 +36,7 @@ int main(){
 				G[i][j]=INF;
 		}
 	}
-	printf("Enter Starting Vertex, Ending Vertex and Weight of\n");
+	printf("Enter Starting Vertex, Ending Vertex and Weight of:\n");
 	for(i=0;i<e;i++){
 		printf("Edge[%d]: ",i+1);
 		scanf("%d %d %d",&j,&k,&s); 
