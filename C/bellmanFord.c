@@ -24,7 +24,7 @@ int bellmanFord(int G[][20],int v,int e,int s){
 	}
 	return 1;
 }
-void main(){
+int main(){
 	int i,j,k,s,v,e,G[20][20];
 	printf("Enter Number of Vertices and Edges: ");
 	scanf("%d%d",&v,&e);
@@ -51,4 +51,5 @@ void main(){
 	}
 	else
 		printf("\nNegative Cost Cycle present.\n");
+	return 0;
 }
