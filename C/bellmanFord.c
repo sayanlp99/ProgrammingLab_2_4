@@ -36,14 +36,17 @@ void main(){
 				G[i][j]=INF;
 		}
 	}
+	printf("Enter Starting Vertex, Ending Vertex and Weight of\n");
 	for(i=0;i<e;i++){
-		printf("Enter Starting Vertex, Ending Vertex and Weight of Edge-%d: ",i+1);
-		scanf("%d%d%d",&j,&k,&s); G[j][k]=s;
+		printf("Edge[%d]: ",i+1);
+		scanf("%d %d %d",&j,&k,&s); 
+		G[j][k]=s;
 	}
-	printf("Enter Starting Vertex: "); scanf("%d",&s); printf("\n");
+	printf("Enter Starting Vertex: "); 
+	scanf("%d",&s); 
 	if(bellmanFord(G,v,e,s)){
 		for(i=1;i<=v;i++){
-				printf("Cost from vertex %d to %d is %d.\n",s,i,d[i]);
+			printf("Cost from vertex %d to %d is %d.\n",s,i,d[i]);
 		}
 	}
 	else
