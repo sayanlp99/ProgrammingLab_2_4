@@ -50,6 +50,6 @@ int main(){
 		}
 	}
 	else
-		printf("\nNegative Cost Cycle present.\n");
+		printf("Negative Cost Cycle present.\n");
 	return 0;
 }
