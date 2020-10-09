@@ -29,8 +29,10 @@ void main(){
 	printf("Enter size of the array: ");
 	scanf("%d",&size);
 	printf("Enter array elements:-\n");
-	for(i=0;i<size;i++)
+	for(i=0;i<size;i++){
+		printf("[%d]: ",i+1);
 		scanf("%d",&array[i]);
+	}
 	heapSort(array,size);
 	printf("Array after sorting:-\n");
 	for(i=0;i<size;i++){
