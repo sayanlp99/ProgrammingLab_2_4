@@ -43,8 +43,13 @@ int nQueens(int row, int n){
 }
 int main(){
 	int n, i, j;
-	printf("Enter number of queens: ");
+	printf("Enter number of queens(Minimum is 4): ");
 	scanf("%d",&n);
-	nQueens(1,n);
+	if(n<3){
+		printf("Numbers of queens should atleast be 4.\n");
+	}
+	else{
+		nQueens(1,n);
+	}
 	return 0;
 }
